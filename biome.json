@@ -1,0 +1,19 @@
+{
+	"extends": [
+		"@ahdcreative/biome-config"
+	],
+	"files": {
+		"ignoreUnknown": true,
+		"include": [
+			"src"
+		],
+		"ignore": [
+			"lib",
+			"dist",
+			"node_modules",
+			"out",
+			"public",
+			"**/*.d.ts"
+		]
+	}
+}

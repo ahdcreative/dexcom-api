@@ -1,0 +1,37 @@
+{
+  "name": "@ahdcreative/dexcom-api",
+  "version": "0.0.1",
+  "description": "Dexcom API client to communicate and retrieve data from the sharing service.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "ts:type-check": "tsc --noEmit",
+    "ts:type-check:watch": "npm run ts:type-check -- --watch",
+    "build": "tsc",
+    "start": "tsx watch src/index.ts",
+    "debug": "tsx watch --inspect src/index.ts",
+    "lint": "biome check ./src",
+    "lint:fix": "biome check --write ./src",
+    "format": "biome format --write ./src",
+    "prepare": "husky install",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.9",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@release-it/conventional-changelog": "^10.0.6",
+    "husky": "^9.1.7",
+    "release-it": "^19.2.4",
+    "tsx": "^4.7.0",
+    "typescript": "^6.0.2"
+  },
+  "author": {
+    "name": "AHDCreative",
+    "email": "hello@ahd-creative.agency"
+  },
+  "license": "MIT"
+}
