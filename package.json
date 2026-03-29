@@ -1,6 +1,6 @@
 {
   "name": "@ahdcreative/dexcom-api",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Dexcom API client to communicate and retrieve data from the sharing service.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
